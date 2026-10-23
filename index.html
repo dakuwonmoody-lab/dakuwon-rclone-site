@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dakuwon-rclone</title>
+<meta name="description" content="dakuwon-rclone is a private file-transfer tool that copies files between its operator's computer and Google Drive.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --link: #1a5fd0; --rule: #e3e3e3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #ececec; --muted: #a8a8a8; --link: #8ab4f8; --rule: #2e2e2e; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  .tag { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  li { margin: 4px 0; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>dakuwon-rclone</h1>
+  <p class="tag">A private Google Drive transfer tool, operated by Saiyan Corp.</p>
+
+  <p>dakuwon-rclone runs <a href="https://rclone.org">rclone</a>, the open-source file sync
+  program, on its operator's own computer. It copies large research files, such as model
+  checkpoints and datasets, between that computer and the operator's Google Drive, and checks
+  that each copy arrived intact.</p>
+
+  <h2>What it does with Google Drive</h2>
+  <ul>
+    <li>Uploads files from the operator's computer to their Google Drive.</li>
+    <li>Downloads files from Google Drive back to that computer.</li>
+    <li>Lists, moves, renames, or deletes Drive files only when the operator tells it to.</li>
+    <li>Compares checksums to confirm copies are correct, and reports storage used and free.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>The app is for its operator's own use and is not offered to the public. It has no server
+  or database of its own: sign-in tokens stay in a local file on the operator's computer. See
+  the <a href="/privacy">privacy policy</a> for details.</p>
+
+  <footer>
+    <a href="/privacy">Privacy policy</a> &middot;
+    Contact: <a href="mailto:scarmoody719@gmail.com">scarmoody719@gmail.com</a> &middot;
+    <a href="https://www.saiyancorp.io">Saiyan Corp</a>
+  </footer>
+</main>
+</body>
+</html>

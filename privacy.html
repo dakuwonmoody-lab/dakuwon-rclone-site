@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy: dakuwon-rclone</title>
+<meta name="description" content="How the dakuwon-rclone app handles Google account and Google Drive data.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --link: #1a5fd0; --rule: #e3e3e3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #ececec; --muted: #a8a8a8; --link: #8ab4f8; --rule: #2e2e2e; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-size: 0.9em; overflow-wrap: anywhere; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="/">&larr; dakuwon-rclone</a></p>
+  <h1>Privacy Policy: dakuwon-rclone</h1>
+  <p class="date">Effective date: October 22, 2026</p>
+
+  <p>This policy explains how <strong>dakuwon-rclone</strong> (&ldquo;the app&rdquo;) handles
+  information from Google accounts. The app is operated by Saiyan Corp (saiyancorp.io).</p>
+
+  <h2>What the app is</h2>
+  <p>dakuwon-rclone is a private file-transfer tool. It runs rclone, the open-source file sync
+  program (<a href="https://rclone.org">rclone.org</a>), on its operator's own computer to copy
+  files between that computer and the operator's Google Drive. It is not offered to the public.
+  It has no server, website service, or database of its own.</p>
+
+  <h2>Google data the app accesses</h2>
+  <p>When you authorize the app, Google asks you to grant one permission:</p>
+  <ul>
+    <li><strong>Google Drive</strong> (<code>https://www.googleapis.com/auth/drive</code>): see,
+    edit, create, and delete your Google Drive files.</li>
+  </ul>
+  <p>With that permission the app can read file and folder names, sizes, dates, checksums and
+  other file details, the contents of files it is told to copy, and your Drive storage quota.</p>
+
+  <h2>How the app uses that data</h2>
+  <p>The app uses Google Drive data only to carry out the transfers its operator starts:</p>
+  <ul>
+    <li>upload files from the computer to Google Drive;</li>
+    <li>download files from Google Drive to the computer;</li>
+    <li>list, move, rename, or delete files in Google Drive when instructed;</li>
+    <li>compare checksums to confirm that files copied correctly;</li>
+    <li>report storage used and storage free.</li>
+  </ul>
+  <p>The app does not read, analyze, or use the contents of files for any other purpose. It does
+  not use Google user data for advertising, does not sell it, and does not use it to develop,
+  improve, or train generalized artificial intelligence or machine learning models. No person
+  reads your Google Drive data through the app other than you.</p>
+
+  <h2>Where data is stored</h2>
+  <ul>
+    <li><strong>Sign-in tokens.</strong> Google issues an access token and a refresh token when you
+    authorize the app. They are stored only in a local rclone configuration file on the computer
+    where you signed in. They are never sent to Saiyan Corp or to anyone else.</li>
+    <li><strong>Files.</strong> Copied files stay in your Google Drive and on your computer. The app
+    may keep a local log of transfers, including file names, on that same computer.</li>
+    <li><strong>In transit.</strong> All communication between the app and Google uses encrypted
+    HTTPS connections.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The app does not share, transfer, or disclose Google user data to any third party, except
+  where required by law. Google processes your data under the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>dakuwon-rclone's use and transfer to any other app of information received from Google APIs
+  will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+  User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Tokens stay on your computer until you remove the app's access or delete the rclone
+  configuration. You can remove access at any time at
+  <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>. Doing
+  so immediately stops the app from reaching your Google Drive. Deleting the rclone configuration
+  file and its logs removes everything the app stored locally. Files in your Google Drive stay
+  under your control and are not deleted when you remove access.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed to children under 13 and does not knowingly collect data from
+  them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective
+  date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:scarmoody719@gmail.com">scarmoody719@gmail.com</a></p>
+</main>
+</body>
+</html>
